@@ -1,0 +1,9 @@
+while true; do
+	read -p "Question" yn
+	case $yn in
+		[Yy]* ) make install; break;;
+		[Nn]* ) exit;;
+		* ) echo "Answer option";;
+	esac
+done
+
